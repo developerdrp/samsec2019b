@@ -6,11 +6,34 @@
             <meta name="author" content="Dharma" />
         </head>
         <body bgcolor="#ff0000" text="#0000ff" background="images/bg.jpg">
+            <div style="width:1140px; margin:auto auto; border: 4px solid #eeffcc; min-height:800px;">
 
             <!-- Commments in html -->
            <header>
             <h1 align='center'>Welcome to the Site</h1>
            </header>
+           <nav>
+               <ol>
+                    <li>HOme</li>
+                    <li>About
+                        <ol>
+                            <li>Mission</li>
+                            <li>Vision</li>
+                            <li>Staffs
+                                <ol>
+                                    <li>Sales DEpt</li>
+                                    <li>Logistics Dept</li>
+                                    <li>Account Dept</li>
+                                    <li> R & D Dept</li>
+                                </ol>
+                            </li><!-- Staff Close-->
+                        </ol>
+                    </li><!-- About Close-->
+                    <li>Download</li>
+                    <li>Contact</li>
+               </ol><!-- mainmenu close-->
+           </nav>
+
            <main>
             <p align="justify">
             <font size=7 color="purple" face='Cooper'>
@@ -24,6 +47,55 @@
             </blockquote></blockquote>
             </p>
             <p>Another Paragraph</p>
+
+            <section>
+                <!-- Unoder List-->
+                <!-- 
+                    # <ul>   </ul>
+                    # <li>  </li> is used for listing the items
+                    # Attribute type="disc/circle/square"
+                -->
+
+                <ul type="square">
+                    <li>Computer</li>
+                    <li>Mobile</li>
+                    <li>Smart TV</li>
+                    <li>Digital Camera</li>
+                </ul>
+                <!-- Order List
+                    # <ol>    </ol>
+                    # list items will written inside<li>  </li>
+                    # has type and start attributes
+                    # type="1/A/a/I/i"
+                    # start="Number"
+                -->
+                <h2>Order List</h2>
+                    <ol>
+                            <li>Computer</li>
+                            <li>Mobile</li>
+                            <li>Smart TV</li>
+                            <li>Digital Camera</li>
+                    </ol>
+
+                    <ol type="A" start="5">
+                            <li>Computer</li>
+                            <li>Mobile</li>
+                            <li>Smart TV</li>
+                            <li>Digital Camera</li>
+                    </ol>
+
+                    <!-- Description List
+                        # <dl>  </dl>
+                            # <dt></dt> Descriptin Title
+                            # <dd> </dd> Description Data
+                    -->
+                    <dl>
+                        <dt>CPU</dt>
+                        <dd>CPU is a Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus, molestias dolores recusandae et labore quibusdam exercitationem in veniam! Aliquid modi nobis iusto vitae sunt incidunt quod accusantium unde neque ea.</dd>
+                        <dt>Mobile</dt>
+                        <dd>Mobile is a Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugiat cumque incidunt voluptate assumenda, deserunt harum reiciendis veniam non at aut recusandae unde voluptatum rerum quas in maiores repellendus blanditiis? Quia!</dd>
+                    </dl>
+            </section>
            </main>
            <footer>
                <hr/>
@@ -31,6 +103,6 @@
 
            </footer>
            
-            
+        </div>
         </body>
     </html> 
