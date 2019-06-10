@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
-<body>
+<body link="red" alink="green" vlink="black">
   <table border=1 width=1140px>
       <tr>
           <th>Sn</th>
@@ -22,10 +22,26 @@
   </table> 
   
   <!-- Layout Design Concept by nesting table-->
+  <!-- define a name for same page link -->
+  <a name="top"></a>
   <table border=0 width="1140px">
       <tr>
           <td>
               <img src="images/banner.jpg" alt="banner">
+          </td>
+      </tr>
+      <tr>
+          <td>
+              <a href="index.html" title="Home">
+                  Home
+                </a> | 
+                <a href="table.html" title="Table Layout">
+                        Link Layout
+                </a> |
+                <a href="https://facebook.com" title="FB" target="_blank">
+                facebook
+                </a>
+                <a href="#">Something</a>
           </td>
       </tr>
       <tr>
@@ -77,7 +93,17 @@
                     <td>&nbsp;</td>
         </tr>
         <tr>
-            <td>&nbsp;</td>
+            <td>&copy; 2019, Yoursite.com, All right Reserved.
+
+                <p align="right">
+                    <a href="#top" title="Go to Top">^Top</a>
+                </p>
+                <p>
+                    <a href="mailto:info@drpoudel.com.np" title="Email">
+                    Email
+                    </a>
+                </p>
+            </td>
          </tr>
   </table>
 </body>
