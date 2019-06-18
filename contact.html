@@ -23,21 +23,65 @@
                 <table border=0 cellpadding=5 cellspacing=5 width=100%>
                     <tr>
                         <td width=30%>
+                            <form name="loginFrm" method="POST" action="" encttype="multipart/form-data">
+                                <fieldset>
+                                    <legend>Login</legend>
+                                    <input type="text" name="name" placeholder="Username" required />
+                                    <br/>
+                                    <input type="password" name="password" placeholder="Password" required />
+                                    <br/>
+                                    <input type="submit" name="submit" value="Login" />
+                                </fieldset> 
+                            </form>
                            
 
                         </td>
                         <td width=70%>
-                            <h2>Registraton</h2>
+                            <h2>If not Existing User Please Register</h2>
+                            <form>
+                                <fieldset>
+                                    <legend>User Registration</legend>
                             <table border=0 cellpadding=10 cellspacing=10>
                                 <tr>
+                                    <td>UserName</td>
                                     <td>
-                                       
-                                    </td>
-                                    <td>
-                                       
+                                        <input type="text" name="username" placeholder="Username" required/>
                                     </td>
                                 </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td>
+                                        <input type="password" name="password" placeholder="Password" required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Email</td>
+                                    <td>
+                                        <input type="email" name="email" placeholder="you@domain.com" required />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>
+                                        <input type="radio" name="gender" value="M" checked />Male
+
+                                        <input type="radio" name="gender" value="F" />FeMale
+                                        <input type="radio" name="gender" value="O"  />Others
+                                    </td>
+                                </tr>
+
+                                <tr>
+                                        <td>Courses</td>
+                                        <td>
+                                            <input type="checkbox" name="php" value="php" checked />PHP
+    
+                                            <input type="checkbox" name="asp" value="asp" />ASP
+                                            <input type="checkbox" name="java" value="java"  />JAVA
+                                        </td>
+                                    </tr>
                             </table>
+                        </fieldset>
+                        </form>
 
                         </td>
                     </tr>
