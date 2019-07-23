@@ -1,0 +1,66 @@
+/* Reset */
+*{
+	margin:0;
+	padding:0;
+}
+#container{
+	width:1140px;
+	min-height:800px;
+	margin:auto auto;
+	background-color:#ffcc99;
+	border:5px solid #ffcc99;
+	border-radius:0px 100px 0px 100px;
+}
+body{
+	background-color:#cc99ff;
+}
+.row{min-height:10px;}
+.col100{width:100%;	min-height:50px;}
+.col50{width:50%;float:left;min-height:50px;}
+.col75{width:75%;float:left;min-height:50px;}
+.col25{width:25%;float:left;min-height:50px;}
+.clear{clear:both;}
+.banner{
+	background-image: url('../images/banner1.jpg');
+	width:1140px;
+	min-height:150px;
+	border-radius:0px 100px 0px 0px;
+	margin:0px;
+	padding:0px;
+}
+
+.topmenu{
+	width:1140px;
+	min-height:50px;
+	background-color:#ffe6e6;
+}
+
+/* Decedent Selector*/
+.topmenu nav{
+	float:right;
+}
+.topmenu nav ul{
+	list-style-type: none;
+	margin-top: 15px;
+}
+
+.topmenu nav ul li{
+	display:inline;
+	padding:15px;
+	
+}
+/*Pseudo class*/
+.topmenu nav ul li:hover{
+	background-color: #ffcccc;
+	opacity: 0.5;
+}
+
+.topmenu nav ul li a{
+	color:#000000;
+	text-decoration: none;
+	font-variant: small-caps;
+}
+.topmenu nav ul li a:hover{
+	text-decoration: overline;
+	color:#ff0000;
+	}
