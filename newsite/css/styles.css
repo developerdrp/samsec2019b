@@ -25,3 +25,20 @@ body{
 .col25{width:25%; float:left;}
 .clr{clear:both;}
 
+.icons{
+	color: rgba(0, 0, 255, 0.5);
+	font-size:40px;
+}
+.icons:hover{
+	color: rgba(0, 0, 255, 1);
+}
+
+#social{
+	width:100px;
+	height:200px;
+	background-color: rgba(255,0,0,0.4);
+	right:0;
+	z-index:9999;
+	position:fixed;
+	top:200px;
+}
