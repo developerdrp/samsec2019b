@@ -42,3 +42,57 @@ body{
 	position:fixed;
 	top:200px;
 }
+
+.bisleri{
+	position:absolute;
+	top:5px;
+	left:490px;
+	z-index:9999;
+}
+
+.circle{
+	border-radius:50%;
+}
+.imgres{
+	width:100%;
+	height:auto;
+}
+
+@media screen and (max-width:1200px)
+{
+	body{
+		background-color:#ff0000;
+	}
+}
+
+
+@media screen and (max-width:768px)
+{
+	body{
+		background-color:#00ff00;
+	}
+	#container{
+		width:700;
+	}
+	.colmd50{
+		width:50%;
+		float:left;
+	}
+	.colmd100{
+		width:100%;
+	}
+}
+
+
+@media screen and (max-width:480px)
+{
+	body{
+		background-color:#0000ff;
+	}
+	#container{
+		width:420;
+	}
+	.colsm100{
+		width:100%;
+	}
+}
