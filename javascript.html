@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Test</title>
+</head>
+<body>
+
+	<div id="name" style="float: right;">
+		
+	</div>
+
+
+<div id="mulTable"></div>
+
+<table border=1 width=800 cellpadding=8 cellspacing=8><tr>
+	<script>
+		for(i=1;i<=100;i++)
+		{
+			if(i%10==0)
+			{
+				document.write("<td>"+i+"</td></tr><tr>");
+			}
+			else
+			{
+				document.write("<td>"+i+"</td>");
+			}
+		}	
+</script>
+</tr>
+</table>
+
+<button onclick="gretting()">Greeting</button>
+
+<button onclick="oddEven()">Odd/Even</button>
+
+<button onclick="christmas()">Christmas</button>
+
+<button onclick="mulTable()">Multiplication Table</button>
+
+	<script src="js/external.js"></script>
+
+
+
+</body>
+</html>
