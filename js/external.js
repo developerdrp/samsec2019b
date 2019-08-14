@@ -81,3 +81,59 @@ function validation()
 	}
 return false
 }
+
+
+function currentDate()
+{
+	var day, date, month, year;
+	//d object of Date Class
+	 d= new Date();
+
+	 day=d.getDay(); // 0-6
+	 date=d.getDate(); //1-31
+	 month=d.getMonth(); //0-11
+	 year=d.getFullYear(); // YYYY
+
+	if(day==0) day="Sunday";
+	else if(day==1) day="Monday";
+	else if(day==2) day="Tuesday";
+	else if(day==3) day="Wednesday";
+	else if(day==4) day="Thursday";
+	else if(day==5) day="Friday";
+	else day="Saturday";
+
+	if(month==0) month="Januray";
+	else if(month==1) month="February";
+	else if(month==2) month="March";
+	else if(month==3) month="April";
+	else if(month==4) month="May";
+	else if(month==5) month="June";
+	else if(month==6) month="July";
+	else if(month==7) month="August";
+	else if(month==8) month="September";
+	else if(month==9) month="October";
+	else if(month==10) month="November";
+	else  month="December";
+
+	document.getElementById('currentDate').innerHTML=day + ", "+date+" "+month+ " "+year;
+	//Calling the refreshTime 
+	refreshTime();
+}
+
+function currentTime()
+{
+	var hh, mm, ss, ampm;
+	t=new Date();
+	hh=t.getHours();//0-23
+	mm=t.getMinutes();
+	ss=t.getSeconds();
+	ampm=hh<=11?"AM":"PM";
+	document.getElementById('hh').innerHTML=hh;
+	document.getElementById('mm').innerHTML=mm;
+	document.getElementById('ss').innerHTML=ss +" "+ampm;
+}
+
+function refreshTime()
+{
+	setInterval(currentTime, 1000);
+}
